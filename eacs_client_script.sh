@@ -11,6 +11,6 @@ WEBSERVERURL="https://macos.it-profs.de/scripts/wipe/eacs-notifier.php"
 
 
 UDID=$(ioreg -d2 -c IOPlatformExpertDevice | awk -F\" '/IOPlatformUUID/{print $(NF-1)}')
-SomeRandomString#1
+
 
 /usr/bin/curl -sk --user-agent "${USERAGENT}" ${WEBSERVERURL} -X POST -F "UDID=${UDID}" 
