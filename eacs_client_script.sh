@@ -7,7 +7,7 @@
 
 USERAGENT="SomeRandomString#1"
 
-WEBSERVERURL="https://macos.it-profs.de/scripts/wipe/adios.php"
+WEBSERVERURL="https://macos.it-profs.de/scripts/wipe/eacs-notifier.php"
 
 
 UDID=$(ioreg -d2 -c IOPlatformExpertDevice | awk -F\" '/IOPlatformUUID/{print $(NF-1)}')
